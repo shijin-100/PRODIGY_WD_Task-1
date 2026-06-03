@@ -1,0 +1,98 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    transition: 0.4s ease;
+    z-index: 1000;
+}
+
+/* Navbar on Scroll */
+#navbar.scrolled {
+    background-color: #222;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo */
+.logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Nav Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+/* Hover Effect */
+.nav-links li a:hover {
+    background-color: white;
+    color: #222;
+}
+
+/* Sections */
+.section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.section h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.section p {
+    font-size: 20px;
+}
+
+/* Different Background Colors */
+.home {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+}
+
+.about {
+    background: linear-gradient(to right, #43e97b, #38f9d7);
+}
+
+.services {
+    background: linear-gradient(to right, #fa709a, #fee140);
+}
+
+.portfolio {
+    background: linear-gradient(to right, #30cfd0, #330867);
+}
+
+.contact {
+    background: linear-gradient(to right, #f7971e, #ffd200);
+}
